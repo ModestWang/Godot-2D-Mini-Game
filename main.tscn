@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=4 uid="uid://dorf53tsjakua"]
+[gd_scene load_steps=10 format=4 uid="uid://dorf53tsjakua"]
 
 [ext_resource type="PackedScene" uid="uid://cxiecelbkpuri" path="res://player/player.tscn" id="1_l2tvj"]
 [ext_resource type="Script" path="res://Main.cs" id="1_ork68"]
 [ext_resource type="PackedScene" uid="uid://ciox2jobikdom" path="res://mob/mob.tscn" id="2_xwu8r"]
+[ext_resource type="Texture2D" uid="uid://b2fslkwlr2346" path="res://art/A002.jpg" id="3_p2hmp"]
 [ext_resource type="PackedScene" uid="uid://xxu52bvxhv2v" path="res://hud/hud.tscn" id="4_uidrj"]
 [ext_resource type="AudioStream" uid="uid://bn4cfx60u2xlf" path="res://art/gameover.wav" id="6_olc76"]
 
@@ -25,7 +26,17 @@ loop = true
 script = ExtResource("1_ork68")
 MobScene = ExtResource("2_xwu8r")
 
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_p2hmp")
+expand_mode = 1
+
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

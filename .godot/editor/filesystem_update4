@@ -1,0 +1,5 @@
+res://hud/HUD.cs
+res://player/Player.cs
+res://Main.cs
+res://mob/Mob.cs
+res://hud/hud.tscn
